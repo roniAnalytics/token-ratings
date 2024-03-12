@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Main Font";
-    src: url('/assets/Alliance\ No.2\ Regular.otf');
+    src: url('./assets/Alliance\ No.2\ Regular.otf');
 }
 
 @font-face {
     font-family: "Secondary Font";
-    src: url('/assets/GT\ America\ Mono\ Regular.ttf');
+    src: url('./assets/GT\ America\ Mono\ Regular.ttf');
 }
 
 @font-face {
   font-family: "Light Main Font";
-  src: url('/assets/AllianceNo.2-Light.otf');
+  src: url('./assets/AllianceNo.2-Light.otf');
 }
 
 html {
