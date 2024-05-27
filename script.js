@@ -864,3 +864,56 @@ Webflow.require('ix2').init(
 );
 
 Webflow.require('commerce') && Webflow.require('commerce').init({ siteId: "65109fa2ec3c83b8f6a8be57", apiUrl: "https://render.webflow.com" });
+document.addEventListener('DOMContentLoaded', (event) => {
+  const openPdfBtn1 = document.getElementById('open-pdf-btn1');
+  const openPdfBtn2 = document.getElementById('open-pdf-btn2');
+  const openPdfBtn3 = document.getElementById('open-pdf-btn3');
+  const frame = document.getElementById('pdf-viewer');
+  const pdfPopup = document.getElementById('pdf-popup-content');
+
+  flag1 = false;
+  flag2 = false;
+  flag3 = false;
+
+
+
+  openPdfBtn1.addEventListener('click', () => {
+    if (flag1) {
+      pdfPopup.style.display = 'none';
+      frame.src = '';
+      flag1 = false;
+    } 
+    else 
+    {
+      pdfPopup.style.display = 'block';
+      frame.src = './assets/sample.pdf';
+      flag1 = true;
+    }
+  });
+  openPdfBtn2.addEventListener('click', () => {
+    if (flag2) {
+      pdfPopup.style.display = 'none';
+      frame.src = '';
+      flag2 = false;
+    } 
+    else 
+    {
+      pdfPopup.style.display = 'block';
+      frame.src = './assets/file.pdf';
+      flag2 = true;
+    }
+  });
+  openPdfBtn3.addEventListener('click', () => {
+    if (flag3) {
+      pdfPopup.style.display = 'none';
+      frame.src = '';
+      flag3 = false;
+    } 
+    else 
+    {
+      pdfPopup.style.display = 'block';
+      frame.src = './assets/sample3.pdf';
+      flag3 = true;
+    }
+  });
+});
