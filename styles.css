@@ -359,7 +359,6 @@ html.w-mod-touch * {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-
 }
 
 .para-2 h5 {
@@ -2034,6 +2033,8 @@ textarea.w-select {
   position: relative;
 }
 
+
+
 .w-nav-link.w--current {
   color: #0082f3;
 }
@@ -2043,7 +2044,7 @@ textarea.w-select {
   position: relative;
 }
 
-.w-nav{
+.w-nav {
   padding: 0;
 }
 
@@ -5566,7 +5567,7 @@ strike.straight::before {
   cursor: pointer;
 }
 
-.pdf-holder{
+.pdf-holder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5581,14 +5582,21 @@ strike.straight::before {
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 #pdf-popup-content {
   display: none;
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  top: 20px;
+  z-index: 99999;
   width: 80vw;
   height: 90vh;
   background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
 }
 
@@ -5599,7 +5607,7 @@ strike.straight::before {
   border: none;
 }
 
-.pdf{
+.pdf {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -5611,8 +5619,8 @@ strike.straight::before {
 
 .close {
   position: absolute;
-  top: 10px;
-  right: 200px;
+  top: -20px;
+  right: -20px;
   color: red;
   font-size: 28px;
   font-weight: bold;
@@ -5626,6 +5634,7 @@ strike.straight::before {
   text-decoration: none;
   cursor: pointer;
 }
+
 
 .pdf-thumb {
   width: 300px;
