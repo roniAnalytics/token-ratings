@@ -2479,9 +2479,9 @@ figcaption {
 
 .nav {
   grid-column-gap: .5em;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .brand {
@@ -5582,10 +5582,19 @@ footer {
   gap: 23px;
 }
 
-.footer-logo h2{
-  font-family: Main Font;
-  color: #e3e3e3;
-  font-size: 40px
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.footer-logo img {
+  width: 222px;
+  height: auto;
+}
+
+.logo-footer{
+  margin: 0;
 }
 
 .footer-text{
