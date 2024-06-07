@@ -1388,7 +1388,7 @@ textarea.w-select {
   padding: 0.2em 0.5em;
 }
 
-.navbar-new{
+.nav-new{
   display: flex;
   justify-content: space-around;
 }
@@ -2479,14 +2479,6 @@ figcaption {
   top: 0;
 }
 
-.nav-block {
-  width: 100%;
-  grid-column-gap: 1em;
-  padding: 0 2%;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
 
 .nav {
   grid-column-gap: 0.5em;
@@ -2665,12 +2657,58 @@ figcaption {
   display: none;
 }
 
+.nav-block {
+  width: 100%;
+  max-width: 1200px;
+  grid-column-gap: 1em;
+  
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  display: flex;
+}
+
+
+
+.pdf-section {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5em 2em 3.75em;
+  gap: 160px;
+  flex-direction: column !important;
+  display: flex;
+  position: relative;
+}
+
+.pdf-section h1{
+  font-size: 2rem;
+}
+
+.pdf-holder {
+  max-width: 1200px;
+}
+
+.pdf-thumb {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+
+  border-radius: 0.5em;
+  object-fit: cover;
+}
+.pdf-holder {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+  justify-content: space-between;
+}
+
 .section-hero {
   justify-content: center;
   align-items: center;
   padding: 3.5em 2em 3.75em;
-  height: 100vh !important;
-  width: 100% !important;
   gap: 10%;
   flex-direction: column !important;
   display: flex;
@@ -2679,7 +2717,7 @@ figcaption {
 .section-brand {
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 16px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -2687,7 +2725,8 @@ figcaption {
 
 .section-brand h1 {
   font-family: "Main Font";
-  font-size: 18px;
+  font-size: 16px;
+  opacity: 80%;
 }
 
 .brand-icons {
@@ -2704,14 +2743,12 @@ figcaption {
 
 /* Container for the section */
 .section-bento {
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10%;
-  width: 100%;
-  height: 100vh;
+  padding: 3.5em 2em 3.75em;
+  gap: 10%;
+  flex-direction: column !important;
+  display: flex;
   background-color: #fafafa;
   font-family: "Main Font";
 }
@@ -2731,9 +2768,10 @@ figcaption {
 }
 
 .section-bento h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 
 .section-bento p {
   font-size: 1rem;
@@ -2783,7 +2821,6 @@ figcaption {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  width: 50%;
 }
 
 /* Horizontal and small squares container */
@@ -2840,7 +2877,7 @@ figcaption {
 }
 
 .right-bento {
-  max-width: 50%;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2858,21 +2895,27 @@ figcaption {
 }
 
 .section-facts {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
-  gap: 2.5%;
-  padding: 10%;
+  padding: 3.5em 2em 3.75em;
+  /* gap: 160px; */
+  flex-direction: column !important;
+  display: flex;
   background-color: #fafafa;
   font-family: 'Main Font';
 }
 
+.facts-top , .facts-bottom {
+  max-width: 1200px;
+}
+
+.facts-img{
+  width: 100%;
+  max-width: 250px ; 
+}
 
 .facts-top {
-  width: 100%;
   height: 50%;
   overflow: hidden;
   display: flex;
@@ -2882,7 +2925,6 @@ figcaption {
 }
 
 .facts-bottom {
-  width: 100%;
   height: 50%;
   overflow: hidden;
   display: flex;
@@ -2901,8 +2943,24 @@ figcaption {
 }
 
 .faq-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 10%;
+  padding: 3.5em 2em 3.75em;
+}
+
+#accordion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.faq h1{
+  font-size: 2rem !important;
 }
 
 .faq-header {
@@ -2973,19 +3031,19 @@ figcaption {
 }
 
 .faq-header h1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .faq-header p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .card-header .btn {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .card-header .btn::after {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .card-body {
@@ -2999,9 +3057,11 @@ figcaption {
   .section-facts h3{
     font-size: 16px;
   }
-  .facts-top, .facts-bottom{
-    flex-direction: column;
+
+  .facts-img{
+    width: 200px;
   }
+
   .facts-top img{
     height: 35%;
   }
@@ -3009,31 +3069,26 @@ figcaption {
     height: 35%;
   }
 
-  .pdf-top {
-    flex-direction: column;
-  }
 
   .pdf-button {
     font-size: 10px !important;
     padding: 10px;
+    background-color: white !important;
     height: auto;
   }
 
-  #pdf-top-h1 {
-    font-size: x-large !important;
-  }
 
   .pdf-holder {
-    flex-direction: column !important;
     gap: 1rem !important;
   }
 
   .pdf-section {
-    gap: 2% !important;
+    gap: 16px !important;
   }
 
   .pdf img {
-    max-width: 150px;
+    max-width: 200px;
+    max-height: 200px;
   }
 }
 
@@ -3042,6 +3097,12 @@ figcaption {
     flex-direction: column;
   }
   .section-hero {
+    gap: 5%;
+  }
+  .bento-vertical{
+    flex-direction: row-reverse !important;
+  }
+  .bento-square{
     gap: 5%;
   }
   .section-hero h1 {
@@ -3069,12 +3130,12 @@ figcaption {
   }
 
   .section-bento h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-bottom: 10px;
   }
 
   .bento-vertical img {
-    width: 50%;
+    width: 20%;
   }
 
   .section-bento h3 {
@@ -3106,12 +3167,11 @@ figcaption {
   }
 
   .bento-vertical {
-    flex-direction: row !important;
+    flex-direction: row-reverse !important;
+    justify-content: start;
+    gap: 5%;
   }
 
-  .bento-vertical img {
-    flex-direction: row !important;
-  }
 
   .bento-horizontal {
     flex-direction: row-reverse !important;
@@ -3124,6 +3184,27 @@ figcaption {
   .bento-square {
     flex-direction: row !important;
   }
+
+  .pdf-section h1{
+    font-size: 1.25rem !important;
+  }
+
+  .pdf-section a{
+    font-size: 10px;
+    gap: 5% !important;
+  }
+
+  .pdf-holder{
+    flex-direction: column;
+  }
+
+  .facts-top, .facts-bottom{
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -6120,24 +6201,6 @@ strike.straight::before {
   overflow: auto !important;
 }
 
-.pdf-holder {
-  display: flex;
-  align-items: center;
-  gap: 5%;
-}
-
-.pdf-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10%;
-  gap: 18%;
-  width: 100% !important;
-  height: 100vh !important;
-  overflow: hidden;
-  position: relative;
-}
 
 #access-href:hover {
   color: white;
@@ -6146,8 +6209,9 @@ strike.straight::before {
 .pdf-top {
   font-family: "Main Font";
   font-size: smaller;
-  display: flex;
   width: 100%;
+  max-width: 1200px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -6169,6 +6233,7 @@ strike.straight::before {
 
 .pdf-button {
   width: 100%;
+  background-color: white;
 }
 
 #pdf-viewer {
@@ -6183,9 +6248,18 @@ strike.straight::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin: 0;
   gap: 1rem;
+  position: relative;
+}
+
+.pdf-modal{
+  position: absolute;
+  bottom: 0;
+  margin: 5%;
+}
+
+.pdf img{
 }
 
 .close {
@@ -6206,12 +6280,7 @@ strike.straight::before {
   cursor: pointer;
 }
 
-.pdf-thumb {
-  width: 400px;
-  max-height: 300px;
-  border-radius: 0.5em;
-  object-fit: cover;
-}
+
 
 .noscroll {
   overflow: hidden;
@@ -6637,6 +6706,9 @@ footer {
     padding-right: 0.5em;
     display: flex;
   }
+
+    
+  
 
   .section-hero {
     flex-direction: column;
