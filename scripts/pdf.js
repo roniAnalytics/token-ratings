@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   openPdfBtn1.addEventListener("click", () => {
     pdfPopup.style.display = "block";
-    frame.src = "./assets/sample.pdf";
+    frame.src = "./assets/pdf-assets/manifesto.pdf";
     pdfSection.style.backdropFilter = "blur(10px)";
     // document.body.classList.add("noscroll");
   });
   openPdfBtn2.addEventListener("click", () => {
     pdfPopup.style.display = "block";
-    frame.src = "./assets/file.pdf";
+    frame.src = "./assets/pdf-assets/token-ratings.pdf";
     // document.body.classList.add("noscroll");
   });
   openPdfBtn3.addEventListener("click", () => {
     pdfPopup.style.display = "block";
-    frame.src = "./assets/sample3.pdf";
+    frame.src = "./assets/pdf-assets/token-ratings.pdf";
     // document.body.classList.add("noscroll");
   });
   closePdfBtn.addEventListener("click", () => {
