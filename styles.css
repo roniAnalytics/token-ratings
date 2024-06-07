@@ -2792,9 +2792,6 @@ figcaption {
   justify-content: center;
 }
 
-.bento-horizontal img {
-  padding: 10%;
-}
 
 .bento-square {
   flex-direction: column;
@@ -2991,6 +2988,7 @@ figcaption {
 }
 
 .card{
+  text-decoration: none !important;
   margin: 1%;
 }
 
@@ -3009,8 +3007,12 @@ figcaption {
   content: '\2212'; /* Minus symbol */
 }
 
+.btn-link.focus, .btn-link:focus{
+  text-decoration: none !important;
+}
+
 .card-header .btn:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .card-header .btn:hover::after {
