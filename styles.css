@@ -2555,6 +2555,8 @@ figcaption {
   border-radius: 8px;
   font-size: 0.75em;
   font-weight: 500;
+  text-align: center;
+  width: 300px;
   padding: 1em 2.5em;
   height: 40px;
   font-family: "Secondary Font";
@@ -2692,10 +2694,10 @@ figcaption {
   width: 100%;
   max-width: 350px;
   height: auto;
-
   border-radius: 0.5em;
   object-fit: cover;
 }
+
 .pdf-holder {
   display: flex;
   align-items: center;
@@ -3063,6 +3065,77 @@ figcaption {
   background-color: white;
 }
 
+.section-reports{
+  justify-content: center;
+  align-items: center;
+  padding: 3.5em 2em 3.75em;
+  gap: 2rem;
+  flex-direction: column !important;
+  display: flex;
+  position: relative;
+}
+
+.report-top{
+  font-family: 'Main Font';
+  text-align: center;
+}
+
+.report-top h1{
+  font-size: 2rem;
+}
+
+.report-top p{
+  color: #555;
+}
+
+.report{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 1rem;
+  position: relative;
+}
+
+.report-top{
+  width: 100%;
+  max-width: 1200px;
+}
+
+.report-button{
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  margin: 5%;
+  border-radius: 8px;
+}
+
+
+.report-holder{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+  justify-content: space-between;
+  max-width: 1200px;
+
+}
+
+@media (max-width: 1280px) {
+  .nav-button-outline{
+    width: 260px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-button-outline{
+    width: 200px;
+    padding: 10px !important;
+  }
+}
+
+
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .faq-section {
@@ -3107,10 +3180,10 @@ figcaption {
     height: 35%;
   }
 
-  .pdf-button {
+  .nav-button-outline {
+    width: 160px !important;
     font-size: 10px !important;
     padding: 10px;
-    background-color: white !important;
     height: auto;
   }
 
@@ -3118,13 +3191,17 @@ figcaption {
     gap: 1rem !important;
   }
 
+  .report-holder{
+    gap: 1rem !important;
+  }
+
   .pdf-section {
     gap: 16px !important;
   }
 
-  .pdf img {
-    max-width: 200px;
-    max-height: 200px;
+  .pdf img, .report-holder img{
+    max-width: 180px !important;
+    max-height: 200px !important;
   }
 }
 
@@ -3189,7 +3266,7 @@ figcaption {
   }
 
   .section-bento p {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 10px;
     color: #555;
   }
@@ -3233,12 +3310,24 @@ figcaption {
     font-size: 1.25rem !important;
   }
 
+  .section-reports{
+    height: 100% !important;
+  }
+
+  .section-reports h1{
+    font-size: 1.25rem;
+  }
+
   .pdf-section a {
     font-size: 10px;
     gap: 5% !important;
   }
 
   .pdf-holder {
+    flex-direction: column;
+  }
+
+  .report-holder{
     flex-direction: column;
   }
 
@@ -6279,7 +6368,6 @@ strike.straight::before {
 }
 
 .pdf-button {
-  width: 100%;
   background-color: white;
 }
 
