@@ -3058,9 +3058,10 @@ figcaption {
   background-color: white;
 }
 
-/* .email-block a:hover {
-  text-decoration: none;
-} */
+.email-block a:hover {
+  color: black;
+  background-color: white;
+}
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
