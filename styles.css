@@ -3209,6 +3209,13 @@ figcaption {
 }
 
 @media (max-width: 640px) {
+  .modal-dialog-centered{
+    max-width: auto !important;
+    max-height: auto !important;
+  }
+  .close{
+    visibility: hidden;
+  }
   #access-href {
     width: 150px;
     padding: 15px !important;
