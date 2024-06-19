@@ -3125,6 +3125,11 @@ figcaption {
 
 }
 
+.iframe-loader {
+  background:url(./assets/loader.gif) center center no-repeat;
+  background-size: 10%;
+}
+
 @media (max-width: 1280px) {
   .card-button{
     width: 260px;
@@ -3141,6 +3146,11 @@ figcaption {
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
+  .iframe-loader {
+    background:url(./assets/loader.gif) center center no-repeat;
+    background-size: 10%;
+  }
+  
   .faq-section {
     padding: 10px;
   }
