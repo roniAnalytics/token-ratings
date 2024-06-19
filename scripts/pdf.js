@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   openPdfBtn3.addEventListener("click", () => {
     pdfPopup.style.display = "block";
-    frame.src = "https://docs.google.com/gview?url=https://tokenratings.jlabsdigital.com/assets/pdf-assets/TRR_March2024.pdf&embedded=true";
+    frame.src = "https://docs.google.com/gview?url=https://tokenratings.jlabsdigital.com/assets/pdf-assets/trr-march-2024.pdf&embedded=true";
     // document.body.classList.add("noscroll");
   });
   closePdfBtn.addEventListener("click", () => {
