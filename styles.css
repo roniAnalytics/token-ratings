@@ -3147,8 +3147,7 @@ figcaption {
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .iframe-loader {
-    background:url(./assets/loader.gif) center center no-repeat;
-    background-size: 10%;
+    background-size: 30% ;
   }
   
   .faq-section {
