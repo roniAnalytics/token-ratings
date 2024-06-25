@@ -3107,7 +3107,6 @@ figcaption {
 }
 
 .report-button{
-  position: absolute;
   bottom: 0;
   background-color: white;
   margin: 5%;
@@ -3146,6 +3145,9 @@ figcaption {
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
+  .br-comingsoon {
+    display: block !important;
+  }
   .iframe-loader {
     background-size: 30% ;
   }
